@@ -401,32 +401,24 @@ header .content {
 ============= */
 footer .content {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "logo copyright" "logo tina";
-}
-footer .content img {
-  grid-area: logo;
-}
-footer .content h3 {
-  grid-area: copyright;
 }
 
 /* =============
-    hero
+    HERO
 ============= */
 .hero img {
   width: 100%;
 }
 
 /* =============
-   Main Games
+   MAIN GAMES
 ============= */
-.games .games-content img {
+.games img {
   width: 100%;
 }
 
 /* =============
-    products
+    PRODUCTS
 ============= */
 .product .product-content ul {
   display: grid;
@@ -434,12 +426,19 @@ footer .content h3 {
 }
 
 /* =============
-  hero details
+  HERO DETAILS
 ============= */
+.details img {
+  width: 1%;
+}
 .details .details-content ul {
   display: grid;
   gap: 20px;
 }
-.details .details-content img {
-  width: 10%;
+
+/* =============
+   WHATS NEW
+============= */
+.news img {
+  width: 100%;
 }
