@@ -184,11 +184,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/SVG\/gs logo.svg" : {
+    "\/deploy\/img\/SVG\/gslogo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/SVG\/gs logo.svg",
+      "oAP" : "\/deploy\/img\/SVG\/gslogo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -436,11 +436,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/dev\/assets\/SVG\/gs logo.svg" : {
+    "\/dev\/assets\/SVG\/gslogo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/dev\/assets\/SVG\/gs logo.svg",
+      "oAP" : "\/dev\/assets\/SVG\/gslogo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -690,6 +690,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -718,7 +726,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 670365424.92247903,
-    "displayValue" : "template",
+    "displayValue" : "Web-2-Project1",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-tar",
     "iconImageWasSetByUser" : 0
