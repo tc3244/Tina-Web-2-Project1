@@ -352,6 +352,15 @@ template {
 /* =============
     Base
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+.container .content {
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
@@ -382,6 +391,22 @@ textarea {
 /* =============
     Header
 ============= */
+header .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 /* =============
     Footer
 ============= */
+footer .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "logo copyright" "logo tina";
+}
+footer .content img {
+  grid-area: logo;
+}
+footer .content h3 {
+  grid-area: copyright;
+}

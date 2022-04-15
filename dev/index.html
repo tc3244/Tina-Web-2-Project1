@@ -9,67 +9,88 @@
     <title>GameStop</title>
   </head>
 
-  <body>
+<body>
 
-    <header>
-      <div>
-        <img src="/deploy/img/SVG/gslogo.svg" alt="Site Logo">
-      </div>
-
-      <!-- search bar -->
-      <nav>
-        <p> Search our inventory</p>
-        <img src="/deploy/img/SVG/search.svg" alt="Site Logo">
-      </nav>
-    </header>
-
-    <!-- Hero 1 -->
-    <section>
-
-      <img src="/deploy/img/kirby.png" alt="Kirby Hero Image">
-
-      <h3> Kirby and The Forgotten Land </h3>
-      <p> Demo Available </p>
-      <p> Details </p>
-      <img src="/deploy/img/SVG/arrow.svg" alt="click here">
-
-      <h3> Release Date March 25, 2022 </h3>
-      <p> Price: $59.99 </p>
-      <p> Details </p>
-      <img src="/deploy/img/SVG/arrow.svg" alt="click here">
-
-    </section>
-
-<!-- Products: Build PC & Deals-->
-<section>
-
-  <h2>Build your Dream PC</h2>
-  <div>
-    <img src="/deploy/img/pc.png" alt="Build Your Dream PC">
+<header class="container">
+  <div class="content">
+    <img src="/deploy/img/SVG/gslogo.svg" alt="Site Logo">
   </div>
-  <p>Start here</p>
+</header>
 
-  <h2>Build your Dream PC</h2>
-  <div>
-    <img src="/deploy/img/deal.png" alt="Build Your Dream PC">
+<!-- search bar -->
+
+<section class="search">
+  <div class="content">     
+     
+    <div>
+      <form action="#">
+        <input type="text" placeholder="Search our inventory">
+        <button><img src="/deploy/img/SVG/search.svg" alt="Site Logo"></button>
+      </form>
+    </div>
+
   </div>
-  <p>Order here</p>
+</section>
+
+<!-- hero 1 -->
+
+<section class="hero">
+
+  <img src="/deploy/img/kirby.png" alt="Kirby Hero Image">
+
+  <h3> Kirby and The Forgotten Land </h3>
+  <p> Demo Available </p>
+  <p> Details </p>
+  <img src="/deploy/img/SVG/arrow.svg" alt="click here">
+
+  <h3> Release Date March 25, 2022 </h3>
+  <p> Price: $59.99 </p>
+  <p> Details </p>
+  <img src="/deploy/img/SVG/arrow.svg" alt="click here">
 
 </section>
 
-<!-- Main Games -->
+<!-- Products -->
+
+<section class="product">
+  <div class="content">
+
   <div>
-    <img src="/deploy/img/ghostwire.jpeg" alt="ghostwire Tokyo">
-    <img src="/deploy/img/eldenring.jpeg" alt="eldenring">
-    <img src="/deploy/img/gt7.jpg" alt="gt7">
+      <h2>Build your Dream PC</h2>
+      <img src="/deploy/img/pc.png" alt="Build Your Dream PC">
+      <p>Start here</p>
   </div>
+
+  <div>
+    <h2>Build your Dream PC</h2>
+    <img src="/deploy/img/deal.png" alt="Build Your Dream PC">
+    <p>Order here</p>
+  </div>
+
+  </div>
+</section>
+
+<!-- Main Games -->
+
+<section class="games">
+  <div class="content">
+
+    <div>
+      <img src="/deploy/img/ghostwire.jpeg" alt="ghostwire Tokyo">
+      <img src="/deploy/img/eldenring.jpeg" alt="eldenring">
+      <img src="/deploy/img/gt7.jpg" alt="gt7">
+    </div>
+
+  </div>
+</section>
 
 <!-- What's New? -->
 
-<section>
+<section class="news">
+  <div class="content">
 
   <h2>What's New?</h2>
-  
+
   <img src="/deploy/img/monkeyisland.jpg" alt="monkeyisland">
   <article> Monkey Island Returns With A New Game </article>
   <p>Monkey Island, the iconic point-and-click adventure series developed by genre heavyweights Ron Gilbert, David Grossman, and Tim Schafer...</p>
@@ -95,15 +116,15 @@
   <p>Sony has officially confirmed the PlayStation Plus lineup for April 2022, with three more games coming to the service from very different genres...</p>
   <p>Read More</p>
 
+  </div>
 </section>
 
-<footer>
+<!-- footer -->
 
-  <!-- Locations -->
+<footer class="container">
+  <div class="content">
 
   <h2>Locations</h2>
-
-<div>
 
   <h3>Pennsylvania</h3>
   <img src="/deploy/img/SVG/location.svg" alt="location">
@@ -126,11 +147,6 @@
   <img src="/deploy/img/SVG/phone.svg" alt="phone">
   <p>(310)204-5809</p>
 
-</div>
-
-  <!-- Locations -->
-<section>
-  
   <h2>News Letter Sign Up</h2>
   <p>Email Address</p>
   <p>Sign Up</p>
@@ -141,6 +157,8 @@
   <img src="/deploy/img/SVG/instagram.svg" alt="instagram">
   <img src="/deploy/img/SVG/facebook.svg" alt="facebook">
 
+      
+  </div>
 </section>
 
 
