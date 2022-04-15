@@ -1,17 +1,17 @@
 /* =============
-  hero details
+  HERO DETAILS
 ============= */
 
 .details{
    
+    img{
+        width:1%;
+    }
+
     .details-content{
         ul{
             display:grid;
             gap:20px;
-        }
-        
-        img{
-            width:10%;
         }
     }
 }
