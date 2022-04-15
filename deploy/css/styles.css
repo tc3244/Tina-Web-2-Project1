@@ -410,3 +410,40 @@ footer .content img {
 footer .content h3 {
   grid-area: copyright;
 }
+
+/* =============
+    hero
+============= */
+.hero img {
+  width: 100%;
+}
+
+/* =============
+   Main Games
+============= */
+.games .games-content ul {
+  display: grid;
+  gap: 20px;
+}
+.games .games-content img {
+  width: 50%;
+}
+
+/* =============
+    products
+============= */
+.product .product-content ul {
+  display: grid;
+  gap: 20px;
+}
+
+/* =============
+  hero details
+============= */
+.details .details-content ul {
+  display: grid;
+  gap: 20px;
+}
+.details .details-content img {
+  width: 10%;
+}

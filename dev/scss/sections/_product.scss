@@ -1,16 +1,13 @@
 /* =============
-   Main Games
+    products
 ============= */
 
-.games{
+.product{
    
-    .games-content{
+    .product-content{
         ul{
             display:grid;
             gap:20px;
-        }
-        img{
-            width: 50%;
         }
     }
 }
