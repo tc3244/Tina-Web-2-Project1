@@ -421,12 +421,8 @@ footer .content h3 {
 /* =============
    Main Games
 ============= */
-.games .games-content ul {
-  display: grid;
-  gap: 20px;
-}
 .games .games-content img {
-  width: 50%;
+  width: 10%;
 }
 
 /* =============
