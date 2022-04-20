@@ -3,9 +3,23 @@
 ============= */
 
 footer{
-    
+
     .content{
-        display:grid;
+        display: grid;
+        grid-template-columns: 100%;
+
+        .locations, .follow{
+            ul{
+                list-style: none;
+                padding-inline-start: 0;
+            }
+        }
+
+        .follow{
+            ul li{
+                display: inline-block;
+            }
+        }
     }
 
 }
