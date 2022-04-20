@@ -7,6 +7,11 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+@media screen and (max-width: 768px) {
+  li.img-3 {
+    display: none;
+  }
+}
 /* =============
     Variables
 ============= */
@@ -452,9 +457,6 @@ footer .content .follow ul li {
 }
 .games ul li img {
   width: 100%;
-}
-.games ul li.img-3 {
-  display: none;
 }
 
 /* =============
