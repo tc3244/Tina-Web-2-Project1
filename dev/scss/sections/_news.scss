@@ -3,9 +3,17 @@
 ============= */
 
 .news{
-   
-    img{
-        width: 100%;
-    }
 
+    .article-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        gap:15px;
+
+        article{
+            
+            img{
+                width:100%;
+            }
+        }
+    }
 }
