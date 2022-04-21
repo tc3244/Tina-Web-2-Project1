@@ -111,18 +111,6 @@ html {
     }
 }
 
-// Mobile Gallery Hide
-
-@media screen and (max-width: 768px) {
-    li.img-3 {
-      display: none;
-    }
-  }
-
-
-
-
-
 //Usage
 // @include sm{
 //     grid-template-columns: 100%;
@@ -170,3 +158,11 @@ html {
         @content;
     }
 }
+
+// Gallery Hide
+
+@media screen and (max-width: 1440px) {
+    li.img-3 {
+      display: none;
+    }
+  }
