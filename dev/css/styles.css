@@ -7,11 +7,6 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
-@media screen and (max-width: 1440px) {
-  li.img-3 {
-    display: none;
-  }
-}
 /* =============
     Variables
 ============= */
@@ -459,6 +454,11 @@ footer .content .follow ul li {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  li.img-3 {
+    display: none;
+  }
+}
 /* =============
     PRODUCTS
 ============= */
