@@ -158,11 +158,3 @@ html {
         @content;
     }
 }
-
-// Gallery Hide
-
-@media screen and (max-width: 1440px) {
-    li.img-3 {
-      display: none;
-    }
-  }
