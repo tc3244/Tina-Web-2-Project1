@@ -7,25 +7,32 @@
     .content{
         
             display: grid;
-            grid-template-columns: 50% 50%;
-            gap:15px;
-            grid-template-areas:
-            "h2 image"
-            "button image"
-            ;
-
-            h2{
-                grid-area: h2;
-            }
-
-            a{
-                grid-area: button;
-            }
-
-            img{
-                grid-area: image;
-        
-        }
-
     }
 }
+
+@media screen and (min-width: 768px) {
+    .content{
+        
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap:15px;
+        grid-template-areas:
+        "h2 image"
+        "button image"
+        ;
+
+        h2{
+            grid-area: h2;
+        }
+
+        a{
+            grid-area: button;
+        }
+
+        img{
+            grid-area: image;
+    
+    }
+
+}
+  }

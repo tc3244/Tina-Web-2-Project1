@@ -3,22 +3,63 @@
 ============= */
 
 .games{
-        ul{
-            list-style: none;
-            padding-inline-start: 0;
-    
-            li{
-                img{
-                    width: 100%;
-                }
-                
-                @media screen and (max-width: 1200px) {
-                    li.img-3 {
-                      display: none;
-                    }
-                  }
-                  
-            
+        div{
+            img{
+                width: 100%;
             }
-        }
+            }
+        
     }
+
+    @media screen and (min-width: 768px) {
+        .games-img{
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "img-1 img-2"
+              "img-1 img-2"; 
+          }
+          .img-1 { grid-area: img-1; }
+          .img-2 { grid-area: img-2; }
+      }
+
+
+      @media screen and (min-width: 992px) {
+            .games-img {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                  "img-1 img-1 img-2"
+                  "img-1 img-1 img-2";
+              }
+              
+              .img-1 { grid-area: img-1; }
+              
+              .img-2 { grid-area: img-2; }
+              
+      }
+
+      @media screen and (max-width: 1200px) {
+        div.img-3 {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .games-img {
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "img-1 img-2"
+              "img-1 img-3"; 
+          }
+          .img-1 { grid-area: img-1; }
+          .img-2 { grid-area: img-2; }
+          .img-3 { grid-area: img-3; }
+      }

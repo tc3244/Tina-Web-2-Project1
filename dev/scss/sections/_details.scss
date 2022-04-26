@@ -15,3 +15,16 @@
         }
     }
 }
+
+  @media screen and (min-width: 768px) {
+    .content {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "sub-content1 sub-content2"; 
+      }
+      .sub-content1 { grid-area: sub-content1; }
+      .sub-content2 { grid-area: sub-content2; }
+  }
