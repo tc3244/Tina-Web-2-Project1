@@ -15,24 +15,22 @@
 
 <body>
 
+<!-- HEADER -->
+
 <header class="container">
   <div class="content">
     <img class="site-logo" src="/deploy/img/SVG/gslogo.svg" alt="Site Logo">
   </div>
 </header>
 
-<!-- search bar -->
+<!-- SEARCH BAR -->
 
 <section class="search">
-  <div class="content">     
-     
-    <div>
+  <div class="content">
       <form action="#">
-        <input type="text" placeholder="Search our inventory">
+        <input type="text" id="input" placeholder="Search our inventory">
         <button><img src="/deploy/img/SVG/search.svg" alt="Site Logo"></button>
       </form>
-    </div>
-
   </div>
 </section>
 
@@ -66,16 +64,16 @@
 <section class="product">
   <div class="content">
 
-  <div class="product1">
+  <div class="sub-product">
       <h2>Build your Dream PC</h2>
       <img src="/deploy/img/pc.png" alt="Build Your Dream PC">
       <a href="#">Start here</a>
   </div>
 
-  <div class="product2">
+  <div class="sub-product">
     <h2>Build your Dream PC</h2>
     <img src="/deploy/img/deal.png" alt="Build Your Dream PC">
-    <a href="#">Order here</a>
+    <button>Order here</button>
   </div>
 
   </div>
@@ -104,22 +102,21 @@
 </section>
 
 <section class="news-article">
-<div class="article-grid">
-  <div class="article1">
-    <article>
-      <img src="/deploy/img/monkeyisland.jpg" alt="monkeyisland">
-      <div class="container">
-        <div class="content">
-          <h3>Monkey Island Returns With A New Game</h3>
-          <p>Monkey Island, the iconic point-and-click adventure series developed by genre heavyweights Ron Gilbert, David Grossman, and Tim Schafer...</p>
-          <a href="#">Read More</a>
-        </div>
-      </div>
-    </article>
-  </div>
 
-    <div class="article2">
-      <article>
+  <div class="article-grid">
+
+      <article class="article1">
+        <img src="/deploy/img/monkeyisland.jpg" alt="monkeyisland">
+        <div class="container">
+          <div class="content">
+            <h3>Monkey Island Returns With A New Game</h3>
+            <p>Monkey Island, the iconic point-and-click adventure series developed by genre heavyweights Ron Gilbert, David Grossman, and Tim Schafer...</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </article>
+
+    <article class="article2">
         <img src="/deploy/img/mc.jpeg" alt="mc">
         <div class="container">
           <div class="content">
@@ -129,10 +126,8 @@
           </div>
         </div>
       </article>
-    </div>
 
-      <div class="article3">
-        <article>
+      <article class="article3">
           <img src="/deploy/img/ow2.jpg" alt="ow2">
           <div class="container">
             <div class="content">
@@ -141,11 +136,9 @@
               <a href="#">Read More</a>
             </div>
           </div>
-        </article>
-      </div>
+      </article>
 
-        <div class="article4">
-          <article>
+        <article class="article4">
             <img src="/deploy/img/botw2.jpg" alt="botw2">
             <div class="container">
               <div class="content">
@@ -155,10 +148,8 @@
               </div>
             </div>
           </article>
-        </div>
 
-          <div class="article5">
-            <article>
+          <article class="article5">
               <img src="/deploy/img/ps.jpg" alt="ps">
               <div class="container">
                 <div class="content">
@@ -168,9 +159,9 @@
                 </div>
               </div>
             </article>
-          </div>
-        </div>
-  </div>
+
+      </div>
+  </section>
 </section>
 
 <!-- footer -->
@@ -179,32 +170,31 @@
   <div class="content">
 
   <div class="location">
-    <h2>Locations</h2>
+    <h4>Locations</h4>
 
-    <h3>Pennsylvania</h3>
-    <img src="/deploy/img/SVG/location.svg" alt="location">
-    <p> 1001 Market St, 
-      Philadelphia, PA 19107</p>
-    <img src="/deploy/img/SVG/phone.svg" alt="phone">
-    <p>(215)925-1019</p>
+    <ul>
+      <li class="border-bottom">
+      <h5>Pennsylvania</h5>
+      <p><img src="/deploy/img/SVG/location.svg" alt="location"><span class="address">1001 Market St,<br> Philadelphia, PA 19107 </span></p>
+      <p><img src="/deploy/img/SVG/phone.svg" alt="phone">(215)925-1019</p>
+      </li>
 
-    <h3>New Jersey</h3>
-    <img src="/deploy/img/SVG/location.svg" alt="location">
-    <p> 2000 Clements Bridge Rd,
-      Deptford, NJ 08096</p>
-    <img src="/deploy/img/SVG/phone.svg" alt="phone">
-    <p>(856)384-0453</p>
+      <li class="border-bottom">
+      <h5>New Jersey</h5>
+      <p><img src="/deploy/img/SVG/location.svg" alt="location"><span class="address">2000 Clements Bridge Rd,<br> Deptford, NJ 08096</span></p>
+      <p><img src="/deploy/img/SVG/phone.svg" alt="phone">(856)384-0453</p>
+      </li>
 
-    <h3>California</h3>
-    <img src="/deploy/img/SVG/location.svg" alt="location">
-    <p> 3855 Overland Avenue
-      Culver City, CA 90232</p>
-    <img src="/deploy/img/SVG/phone.svg" alt="phone">
-    <p>(310)204-5809</p>
+      <li>
+      <h5>California</h5>
+      <p><img src="/deploy/img/SVG/location.svg" alt="location"><span class="address">3855 Overland Avenue,<br> Culver City, CA 90232</span></p>
+      <p><img src="/deploy/img/SVG/phone.svg" alt="phone">(310)204-5809</p>
+      </li>
+    </ul>
   </div>
 
   <div class="newsletter">
-    <h2>News Letter Sign Up</h2>
+    <h4>News Letter Sign Up</h4>
     <form action="#">
       <input type="text" placeholder="Email Address">
       <button>Sign Up</button>
@@ -212,11 +202,13 @@
   </div>
   
   <div class="follow">
-    <h2>Follow Us</h2>
-    <img src="/deploy/img/SVG/youtube.svg" alt="youtube">
-    <img src="/deploy/img/SVG/twitter.svg" alt="twitter">
-    <img src="/deploy/img/SVG/instagram.svg" alt="instagram">
-    <img src="/deploy/img/SVG/facebook.svg" alt="facebook">
+    <h4>Follow Us</h4>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
       
   </div>

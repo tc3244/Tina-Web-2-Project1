@@ -430,11 +430,11 @@ header .content div {
   margin: 20px 0 20px 0px;
 }
 header .content .site-logo {
-  width: 45px;
+  width: 100px;
 }
 @media (min-width: 992px) {
   header .content .site-logo {
-    width: 65px;
+    width: 200px;
   }
 }
 
@@ -498,6 +498,16 @@ footer .content .location ul .border-bottom, footer .content .follow ul .border-
 footer .content .location ul li {
   color: #F8F9FA;
 }
+footer .content .newsletter button {
+  background-color: #F8F9FA;
+  border: none;
+}
+footer .content .newsletter input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #F8F9FA;
+  margin: 20px 0 20px 0;
+}
 @media (min-width: 768px) {
   footer .content .newsletter {
     grid-area: newsletter;
@@ -508,10 +518,8 @@ footer .content .location ul li {
     grid-area: follow;
   }
 }
-footer .content ul li {
+footer .content ul {
   display: inline-block;
-}
-footer .content ul li a i {
   font-size: 24px;
 }
 
@@ -604,7 +612,7 @@ footer .content ul li a i {
     grid-template-columns: 50% auto;
   }
 }
-.product .content .product1 {
+.product .content .sub-product {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "h2 image" "button image";
@@ -612,20 +620,20 @@ footer .content ul li a i {
   color: #F8F9FA;
   padding: 20px;
 }
-.product .content .product1 h2 {
+.product .content .sub-product h2 {
   grid-area: h2;
   font-weight: 400;
   font-size: 22px;
 }
 @media (min-width: 768px) {
-  .product .content .product1 h2 {
+  .product .content .sub-product h2 {
     font-size: 28px;
   }
 }
-.product .content .product1 a {
+.product .content .sub-product a {
   grid-area: button;
 }
-.product .content .product1 a, .product .content .product1 button {
+.product .content .sub-product a, .product .content .sub-product button {
   color: #F8F9FA;
   background-color: #EE2A28;
   padding: 10px;
@@ -635,10 +643,10 @@ footer .content ul li a i {
   border-radius: 5px;
   text-align: center;
 }
-.product .content .product1 button:hover {
+.product .content .sub-product button:hover {
   cursor: pointer;
 }
-.product .content .product1 img {
+.product .content .sub-product img {
   grid-area: image;
 }
 
@@ -663,7 +671,7 @@ footer .content ul li a i {
 }
 .details .content a:hover {
   text-decoration: underline;
-  color: #212322;
+  color: #EE2A28;
   transition: 0.5s;
 }
 @media (min-width: 768px) {
@@ -693,7 +701,7 @@ footer .content ul li a i {
   }
 }
 .details .content .sub-content2 {
-  background-color: #212322;
+  background-color: #323534;
   padding: 20px;
 }
 .details .content .sub-content2 p {
@@ -794,4 +802,32 @@ footer .content ul li a i {
   .news .news-article .article-grid article.article5 {
     grid-area: a5;
   }
+}
+
+/* =============
+    Search
+============= */
+.search {
+  background-color: #212322;
+}
+.search .content {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+.search .content button {
+  color: #F8F9FA;
+  background-color: #EE2A28;
+  padding: flex;
+  width: flex;
+  text-decoration: none;
+  border: 1px solid #212322;
+  border-radius: 5px;
+  text-align: center;
+}
+.search .content input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #F8F9FA;
+  margin: 20px 0 20px 0;
 }

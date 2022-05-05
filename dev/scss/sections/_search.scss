@@ -1,0 +1,32 @@
+/* =============
+    Search
+============= */
+
+.search{
+    
+    background-color: $gamestop-black-1;
+
+    .content{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+
+        button{
+            color: $gamestop-white;
+            background-color: $gamestop-red;
+            padding: flex;
+            width:flex;
+            text-decoration: none;
+            border: 1px solid $gamestop-black-1;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        input{
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid $gamestop-white;
+            margin: 20px 0 20px 0;
+        }
+    }
+}

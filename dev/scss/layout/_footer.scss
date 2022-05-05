@@ -77,6 +77,19 @@ footer{
         }
 
         .newsletter{
+
+            button{
+                background-color: $gamestop-white;
+                border: none;
+            }
+
+            input{
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $gamestop-white;
+                margin: 20px 0 20px 0;
+            }
+
             @include md{
                 grid-area: newsletter;
             }
@@ -88,14 +101,9 @@ footer{
             }
         }
         
-        ul li{
+        ul{
             display: inline-block;
-
-            a{
-                i{
-                    font-size: 24px;
-                }
-            }
+            font-size: 24px;
         }
     }
 }

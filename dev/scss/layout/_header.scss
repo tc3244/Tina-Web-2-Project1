@@ -16,10 +16,10 @@ header{
         }
 
         .site-logo{
-            width: 45px;
+            width: 100px;
 
             @include lg{
-                width: 65px;
+                width: 200px;
             }
         }
     }

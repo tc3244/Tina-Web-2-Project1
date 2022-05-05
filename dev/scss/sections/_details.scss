@@ -25,7 +25,7 @@
 
             &:hover{
                 text-decoration: underline;
-                color:$gamestop-black-1;
+                color:$gamestop-red;
                 transition: 0.5s;
             }
 
@@ -58,7 +58,7 @@
         }
 
         .sub-content2{
-            background-color: $gamestop-black-1;
+            background-color: $gamestop-black-2;
             padding: 20px;
         
             p{
