@@ -4,59 +4,61 @@
 
 .product{
 
-    .product1{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-areas: 
-            "h2 image"
-            "button image"
-            ;
-            background-color: $gamestop-black-2;
-            color: $gamestop-white;
-
-            h2{
-                grid-area: h2;
-                font-weight: 400;
-                font-size: 22px;
-
-                @include md{
-                    font-size: 28px;
-                }
-            }
-
-            a{
-                grid-area: button;
-            }
-
-            img{
-                grid-area: image;
-            }
-    }
-}
-
-@media screen and (min-width: 768px) {
     .content{
-        
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         gap:15px;
-        grid-template-areas:
-        "h2 image"
-        "button image"
-        ;
 
-        h2{
-            grid-area: h2;
+        @include md {
+            grid-template-columns: 50% auto;
         }
+        
 
-        a{
-            grid-area: button;
-        }
+        .product1{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-areas: 
+                "h2 image"
+                "button image"
+                ;
+                background-color: $gamestop-black-2;
+                color: $gamestop-white;
+                padding: 20px;
 
-        img{
-            grid-area: image;
+                h2{
+                    grid-area: h2;
+                    font-weight: 400;
+                    font-size: 22px;
+
+                    @include md{
+                        font-size: 28px;
+                    }
+                }
+
+                a{
+                    grid-area: button;
+                }
+
+                a, button{
+                    color: $gamestop-white;
+                    background-color: $gamestop-red;
+                    padding: 10px;
+                    width:150px;
+                    text-decoration: none;
+                    border: 1px solid $gamestop-black-1;
+                    border-radius: 5px;
+                    text-align: center;
+                }
     
-    }
+                button{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
 
+                img{
+                    grid-area: image;
+                }
+        }
+    }
 }
-  }
