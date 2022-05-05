@@ -3,8 +3,24 @@
 ============= */
 
 header{
+
+    background-color: $gamestop-white;
+    color: white;
+
     .content{
         display:grid;
         grid-template-columns: 50% 50%;
+
+        div{
+            margin: 20px 0 20px 0px;
+        }
+
+        .site-logo{
+            width: 45px;
+
+            @include lg{
+                width: 65px;
+            }
+        }
     }
 }

@@ -4,22 +4,98 @@
 
 footer{
 
+    background-color: $gamestop-black-1;
+
     .content{
         display: grid;
         grid-template-columns: 100%;
+        margin: 30px;
 
-        .locations, .follow{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "location newsletter"
+            "locations social";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "location newsletter follow";
+        }
+
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            color: $gamestop-white;
+        }
+
+        .location, .follow{
             ul{
                 list-style: none;
-                padding-inline-start: 0;
+                padding:0;
+
+                h5{
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    font-size: 12px;
+                    margin-bottom: 15px;
+
+                    span{
+                        display: inline-block;
+                    }
+
+                }
+
+                a{
+                    color:$gamestop-white;
+                }
+
+                .border-bottom{
+                    border-bottom: 2px solid $gamestop-white;
+                    margin: 20px 0 20px 0;
+                }
+
+            }
+        }
+
+        .location{
+            @include md{
+                grid-area: location;
+            }
+
+            ul{
+                li{
+                    color: $gamestop-white;
+                }
+            }
+        }
+
+        .newsletter{
+            @include md{
+                grid-area: newsletter;
             }
         }
 
         .follow{
-            ul li{
-                display: inline-block;
+            @include md{
+                grid-area: follow;
+            }
+        }
+        
+        ul li{
+            display: inline-block;
+
+            a{
+                i{
+                    font-size: 24px;
+                }
             }
         }
     }
-
 }

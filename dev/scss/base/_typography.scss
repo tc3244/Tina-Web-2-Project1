@@ -1,3 +1,20 @@
 /* =============
     Typography
 ============= */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin:0;
+}
+
+p{
+    font-weight: 16px;
+    margin: 0;
+}
+
+.semi-bold{
+    font-weight: 27px;
+}
