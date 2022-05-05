@@ -653,22 +653,6 @@ footer .content .follow ul li {
     grid-area: image;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .content h2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .content a {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-  .content img {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 3;
-  }
-}
 /* =============
   HERO DETAILS
 ============= */
@@ -784,5 +768,88 @@ footer .content .follow ul li {
     -ms-grid-row-span: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
+  }
+}
+/* =============
+    PRODUCTS
+============= */
+.product .content {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 15px 50%;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    -ms-grid-rows: auto 15px auto;
+        grid-template-areas: "h2 image" "button image";
+  }
+  .content h2 {
+    grid-area: h2;
+  }
+  .content a {
+    grid-area: button;
+  }
+  .content img {
+    grid-area: image;
+  }
+  .content h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .content a {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .content a {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+  .content h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .content h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .content a {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .content a {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+  .content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
   }
 }

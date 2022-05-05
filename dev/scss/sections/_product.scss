@@ -4,9 +4,33 @@
 
 .product{
 
-    .content{
-        
+    .product1{
             display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "h2 image"
+            "button image"
+            ;
+            background-color: $gamestop-black-2;
+            color: $gamestop-white;
+
+            h2{
+                grid-area: h2;
+                font-weight: 400;
+                font-size: 22px;
+
+                @include md{
+                    font-size: 28px;
+                }
+            }
+
+            a{
+                grid-area: button;
+            }
+
+            img{
+                grid-area: image;
+            }
     }
 }
 
