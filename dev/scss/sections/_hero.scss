@@ -8,15 +8,5 @@
         width: 100%;
         display: block;
     }
-
-    .content{
-        display: grid;
-        grid-template-columns: 100%;
-        color: $gamestop-white;
-
-        .arrow{
-            width:10px;
-        }
-    }
     
 }

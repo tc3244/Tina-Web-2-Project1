@@ -4,50 +4,70 @@
 
 .details{
 
-    
+    .content{
+        display: grid;
+        grid-template-columns: 100%;
+        color: $gamestop-white;
 
-    @include md{
-        grid-template-columns: 50% auto;
-    }
-
-   .sub-content1{
-       background-color: $gamestop-black-1;
-
-       @include xl{
-           grid-template-columns: auto auto 16px;
-       }
-
-       h2{
-           font-size: 18px;
-
-           @include lg{
-               font-size: 24px;
-           }
-       }
-   }
-
-   .sub-content2{
-    background-color: $gamestop-black-2;
-
-    @include xl{
-        grid-template-columns: 16px auto auto;
+        .arrow{
+            width:10px;
         }
-    }
 
-    .arrow{
-        width: 10px;
-    }
-}
+        a{
+            color:$gamestop-white;
+            text-decoration: none;
+            transition: 0.5s;
 
-  @media screen and (min-width: 768px) {
-    .content {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "sub-content1 sub-content2"; 
-      }
-      .sub-content1 { grid-area: sub-content1; }
-      .sub-content2 { grid-area: sub-content2; }
-  }
+            img{
+                display: inline-block;
+
+            }
+
+            &:hover{
+                text-decoration: underline;
+                color:$gamestop-black-1;
+                transition: 0.5s;
+            }
+
+        }
+
+        @include md { 
+            grid-template-columns: 50% auto;
+        }
+
+        .sub-content1{
+            background-color: $gamestop-black-1;
+            padding: 20px;
+        
+            @include xl{
+                grid-template-columns: auto auto 16px;
+            }
+        
+            p{
+                margin-bottom: 10px;
+            }
+        
+            h2{
+                font-size: 18px;
+                margin-bottom:10px;
+        
+                @include lg{
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .sub-content2{
+            background-color: $gamestop-black-1;
+            padding: 20px;
+        
+            p{
+                margin-bottom: 10px;
+            }
+        
+            @include xl{
+                grid-template-columns: 16px auto auto;
+                }
+            }
+    }
+} 
