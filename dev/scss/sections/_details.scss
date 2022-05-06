@@ -64,10 +64,22 @@
             p{
                 margin-bottom: 10px;
             }
+
+            h2{
+                font-size: 18px;
+                margin-bottom:10px;
+        
+                @include lg{
+                    font-size: 24px;
+                }
+            }
         
             @include xl{
                 grid-template-columns: 16px auto auto;
                 }
             }
+
+            margin-bottom: 16px;
+
     }
 } 

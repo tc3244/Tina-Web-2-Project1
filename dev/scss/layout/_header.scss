@@ -6,6 +6,7 @@ header{
 
     background-color: $gamestop-white;
     color: white;
+    height: 77px;
 
     .content{
         display:grid;
@@ -16,7 +17,8 @@ header{
         }
 
         .site-logo{
-            width: 100px;
+            width: 143px;
+            align-self: center;
 
             @include lg{
                 width: 200px;

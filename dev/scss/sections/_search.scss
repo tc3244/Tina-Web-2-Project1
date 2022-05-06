@@ -5,6 +5,7 @@
 .search{
     
     background-color: $gamestop-black-1;
+    height: 67px;
 
     .content{
         display: grid;
@@ -19,14 +20,12 @@
             text-decoration: none;
             border: 1px solid $gamestop-black-1;
             border-radius: 5px;
-            text-align: center;
         }
 
         input{
             background: transparent;
             border: none;
             border-bottom: 2px solid $gamestop-white;
-            margin: 20px 0 20px 0;
         }
     }
 }

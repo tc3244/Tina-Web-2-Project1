@@ -421,6 +421,7 @@ textarea {
 header {
   background-color: #F8F9FA;
   color: white;
+  height: 77px;
 }
 header .content {
   display: grid;
@@ -430,7 +431,8 @@ header .content div {
   margin: 20px 0 20px 0px;
 }
 header .content .site-logo {
-  width: 100px;
+  width: 143px;
+  align-self: center;
 }
 @media (min-width: 992px) {
   header .content .site-logo {
@@ -447,7 +449,8 @@ footer {
 footer .content {
   display: grid;
   grid-template-columns: 100%;
-  margin: 30px;
+  margin-top: 10px;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   footer .content {
@@ -482,6 +485,7 @@ footer .content .location ul p, footer .content .follow ul p {
 }
 footer .content .location ul p span, footer .content .follow ul p span {
   display: inline-block;
+  padding-left: 10px;
 }
 footer .content .location ul a, footer .content .follow ul a {
   color: #F8F9FA;
@@ -498,14 +502,18 @@ footer .content .location ul .border-bottom, footer .content .follow ul .border-
 footer .content .location ul li {
   color: #F8F9FA;
 }
+footer .content .newsletter {
+  margin: 20px 0 20px 0;
+}
 footer .content .newsletter button {
-  background-color: #F8F9FA;
+  color: #F8F9FA;
+  padding: 5px;
+  background-color: #EE2A28;
   border: none;
 }
 footer .content .newsletter input {
-  background: transparent;
+  background: #ADB5BD;
   border: none;
-  border-bottom: 2px solid #F8F9FA;
   margin: 20px 0 20px 0;
 }
 @media (min-width: 768px) {
@@ -534,6 +542,9 @@ footer .content ul {
 /* =============
    MAIN GAMES
 ============= */
+.games div {
+  margin-bottom: 17px;
+}
 .games div img {
   width: 100%;
 }
@@ -606,6 +617,7 @@ footer .content ul {
   display: grid;
   grid-template-columns: 100%;
   gap: 15px;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .product .content {
@@ -637,7 +649,7 @@ footer .content ul {
   color: #F8F9FA;
   background-color: #EE2A28;
   padding: 10px;
-  width: 150px;
+  width: flex;
   text-decoration: none;
   border: 1px solid #212322;
   border-radius: 5px;
@@ -657,6 +669,7 @@ footer .content ul {
   display: grid;
   grid-template-columns: 100%;
   color: #F8F9FA;
+  margin-bottom: 16px;
 }
 .details .content .arrow {
   width: 10px;
@@ -707,6 +720,15 @@ footer .content ul {
 .details .content .sub-content2 p {
   margin-bottom: 10px;
 }
+.details .content .sub-content2 h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .details .content .sub-content2 h2 {
+    font-size: 24px;
+  }
+}
 @media (min-width: 1200px) {
   .details .content .sub-content2 {
     grid-template-columns: 16px auto auto;
@@ -730,6 +752,9 @@ footer .content ul {
   .news .news-title h2 {
     font-size: 40px;
   }
+}
+.news .news-article {
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .news .news-article {
@@ -769,14 +794,42 @@ footer .content ul {
   width: 100%;
   display: block;
 }
+.news .news-article .article-grid article .container {
+  margin-bottom: 15px;
+}
 @media (min-width: 1200px) {
   .news .news-article .article-grid article .container {
     grid-template-columns: 15px auto 15px;
   }
 }
 .news .news-article .article-grid article .container h3 {
+  color: #F8F9FA;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 27px;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: left;
+}
+.news .news-article .article-grid article .container p {
+  color: #F8F9FA;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.news .news-article .article-grid article .container button {
+  color: #F8F9FA;
+  background-color: #EE2A28;
+  padding: 10px;
+  width: flex;
+  text-decoration: none;
+  border: 1px solid #212322;
+  border-radius: 5px;
+  text-align: center;
+}
+.news .news-article .article-grid article .container button:hover {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .news .news-article .article-grid article.article1 {
@@ -809,6 +862,7 @@ footer .content ul {
 ============= */
 .search {
   background-color: #212322;
+  height: 67px;
 }
 .search .content {
   display: grid;
@@ -823,11 +877,9 @@ footer .content ul {
   text-decoration: none;
   border: 1px solid #212322;
   border-radius: 5px;
-  text-align: center;
 }
 .search .content input {
   background: transparent;
   border: none;
   border-bottom: 2px solid #F8F9FA;
-  margin: 20px 0 20px 0;
 }
