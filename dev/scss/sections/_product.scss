@@ -13,6 +13,7 @@
             grid-template-columns: 50% auto;
         }
         
+        margin-bottom: 24px;
 
         .sub-product{
                 display: grid;
@@ -43,7 +44,7 @@
                     color: $gamestop-white;
                     background-color: $gamestop-red;
                     padding: 10px;
-                    width:150px;
+                    width:flex;
                     text-decoration: none;
                     border: 1px solid $gamestop-black-1;
                     border-radius: 5px;
